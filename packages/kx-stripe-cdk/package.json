@@ -1,0 +1,41 @@
+{
+  "name": "@toldyaonce/kx-stripe-cdk",
+  "version": "1.0.0",
+  "description": "CDK constructs for Stripe integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "watch": "tsc -w",
+    "test": "echo \"No tests yet\"",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "stripe",
+    "typescript"
+  ],
+  "author": "KxGrynde",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.100.0",
+    "constructs": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "aws-cdk-lib": "^2.100.0",
+    "constructs": "^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "README.md"
+  ]
+}
+

@@ -1,0 +1,39 @@
+{
+  "name": "@toldyaonce/kx-stripe-runtime",
+  "version": "1.0.0",
+  "description": "Runtime utilities for Stripe integration in Lambda functions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "watch": "tsc -w",
+    "test": "echo \"No tests yet\"",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "stripe",
+    "typescript"
+  ],
+  "author": "KxGrynde",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.400.0",
+    "stripe": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "README.md"
+  ]
+}
+

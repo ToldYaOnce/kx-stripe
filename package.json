@@ -1,0 +1,30 @@
+{
+  "name": "kx-stripe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reusable Stripe integration for AWS CDK and Lambda runtime",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "clean": "pnpm -r clean",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "publish:all": "bash scripts/publish-all.sh",
+    "publish:cdk": "cd packages/kx-stripe-cdk && bash build-and-publish.sh",
+    "publish:runtime": "cd packages/kx-stripe-runtime && bash build-and-publish.sh"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "stripe",
+    "lambda",
+    "typescript"
+  ],
+  "author": "KxGrynde",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

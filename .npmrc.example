@@ -1,0 +1,7 @@
+# Copy this file to .npmrc and replace YOUR_GITHUB_TOKEN with your actual token
+# Create token at: https://github.com/settings/tokens
+# Required scopes: write:packages, read:packages
+
+@toldyaonce:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+

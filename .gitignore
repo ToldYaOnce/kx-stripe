@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+lib/
+*.js
+*.d.ts
+*.js.map
+*.d.ts.map
+
+# Keep these specific JS files
+!jest.config.js
+!scripts/**/*.js
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# NPM
+.npmrc
+
+# CDK
+cdk.out/
+.cdk.staging/
+*.assets.json
+*.template.json
+
+# OS
+Thumbs.db
+
+# Temporary
+.tmp/
+temp/
+tmp/
+
